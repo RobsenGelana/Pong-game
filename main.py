@@ -6,6 +6,7 @@ screen = Screen()
 screen.setup(width=800, height=600)
 screen.bgcolor('black')
 screen.title('Pong')
+
 screen.tracer(0)
 
 #Creating object for the paddle
@@ -19,12 +20,13 @@ screen.onkey(l_paddle.move_down, 'Down')
 screen.onkey(r_paddle.move_up, 'w')
 screen.onkey(r_paddle.move_down, 's') 
 
-#creating a ball object
-ball = Ball()
+
 #creating a while loop to update the screen
 game_on = True
 while game_on:
     screen.update()
+    #creating a ball object
+    ball = Ball((350, 270))
 
 
 
