@@ -29,7 +29,7 @@ scoreboard = ScoreBoard()
 game_on = True
 while game_on:
     #Slowing down the pace of the ball
-    time.sleep(0.1)
+    time.sleep(ball.move_speed)
     screen.update()
     ball.move()
 
