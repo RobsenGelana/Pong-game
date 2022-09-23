@@ -1,8 +1,7 @@
-from turtle import Screen, Turtle
+from turtle import Screen
 from paddle import Paddle
 
 screen = Screen()
-turtle = Turtle()
 screen.setup(width=800, height=600)
 screen.bgcolor('black')
 screen.title('Pong')
@@ -23,7 +22,6 @@ screen.onkey(r_paddle.move_down, 's')
 game_on = True
 while game_on:
     screen.update()
-
 
 
 
